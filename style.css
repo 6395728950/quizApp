@@ -417,8 +417,8 @@ p {
  } */
     
  }
- @media screen and(max-width:400px){
+ /* @media screen and(max-width:400px){
     .tag-line{
         width:200px;
     }
- }
+ } */
