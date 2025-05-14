@@ -1,0 +1,424 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+.container {
+    padding: 60px 80px;
+     
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #4b39b5;
+    background-image: url(src/background-imageof_quizApp.jpg); 
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 80% 100%;
+    overflow-x: hidden;
+    
+}
+.section{
+ display: block;
+  
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+      
+}
+.para {
+    font-size: 35px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.tag-line {
+    font-family: "League Spartan", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    padding-right: 20%;
+    line-height: 68px;
+}
+ div{
+    display: block;
+    
+ }
+ .main-content {
+    height:70%;
+    width: 60vw;
+    padding-top: 30px;
+     
+}
+.random-btn button {
+    padding: 5px 20px;
+    border-radius: 40px;
+    border: none;
+    background-color: #fd7140;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+}
+.small-screen-img {
+    display: none;
+}
+ 
+.craousal-para {
+    font-family: "Sanchez", serif;
+    font-size: 24px;
+    color: white;
+    margin-top: 6%;
+}
+.card {
+    background-color: #4b39b5;
+    min-width: 160px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+.main-carousal {
+    background-color: #8c79fd;
+    width: 55vw;
+    height: 24vh;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: "Oswald", sans-serif;
+    background-color: #fd7140;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: ease-in-out 0.3s;
+}
+.card img {
+    width: 95%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+.ques-ans{
+    display: flex;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height:85vh;
+   
+  margin-top: 10px;
+  flex-direction: column;
+  gap:40px;
+
+}
+ 
+.ques {
+    width: 100%;
+    height: 15%;
+    background-color: #8c79fd;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px;
+      
+
+}
+
+.option {
+     
+    
+    background-color: #8c79fd;
+    width: 100%;
+    height: 85%;
+    border-radius: 20px;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    padding: 10px;
+      
+    margin-bottom: 40px;
+    
+}
+.ans {
+    border: 2px solid #4b39b5;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.right {
+    color: #00FF00;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 20px;
+     text-align: center;
+}
+.wrong {
+    color: #9e0000;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+      
+}
+.next-btn {
+    padding: 6px 30px;
+    background-color: #fd7140;
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-top: 10px;
+    
+}
+#selected {
+    background-color: #6d54ff;
+}
+
+#home-btn {
+    padding: 6px 30px;
+    background-color: #fd7140;
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 10px;
+}
+.result {
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -55%;
+}
+.resultimg {
+    width: 380px;
+    height: 380px;
+   
+
+}
+ 
+@media screen and (max-width: 530px) {
+    .container {
+        padding: 30px 50px;
+    }
+}
+@media screen and (max-width: 530px) {
+    body {
+        
+        width: 100%;
+        height: 100vh;
+        background-color: #4b39b5;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+@media screen and (max-width: 769px) {
+    .container {
+        padding: 40px 60px;
+    }
+}
+@media screen and (max-width:769px){
+  .ques-ans{
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: #4b39b5;
+        background-image: url(src/background-imageof_quizApp.jpg);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: 75% 20%;
+    }
+}
+@media screen and (max-width:1090px) {
+     .ques-ans{
+        height:100vh;
+     }
+     .result{
+        margin-top: -70%;
+     }
+     
+}
+@media screen and (max-width: 1025px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: #4b39b5;
+        background-image: url(src/background-imageof_quizApp.jpg);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: 84% 42%;
+    }
+     
+    .ques{
+        height: 20%;
+    }
+}
+ @media screen and (max-width:1000px){
+    .tag-line{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+    .result{
+        margin-top: -90%;
+    }
+ }
+ @media screen and (max-width:600px){
+    .random-btn span{
+         
+            display: none;
+        
+    }
+    .random-btn button{
+        padding: 3px 12px;
+        font-size: 12px;
+        margin-top:  20px;
+        font-weight: 800;
+    }
+    .tag-line{
+        font-size: 30px;
+         line-height: 40px;
+    }
+    .main-carousal{
+        width: 75vw;
+        /* height: 25vh; */
+        padding: 5px;
+        gap:6px;
+        overflow-y: hidden;
+    }
+    
+ }
+ @media screen and (max-width:590px){
+    .ques-ans{
+        height:90vh;
+     }
+     .ques{
+        font-size: 20px;
+        padding: 15px;
+     }
+     .ans{
+        font-size: 20px;
+     }
+     .para{
+        font-size: 25px;
+     }
+     .logo img{
+         width:30px;
+     }
+ }
+ @media screen  and (max-width:500px){
+    body{
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content img{
+        display: block;
+        width: 90vw;
+        height: 500px;
+          
+    }
+    .tag-line{
+        /* display: inline-block; */
+        width:100vw;
+        margin-left: 10%;
+        font-size: 25px;
+    }
+    
+    .random-btn button{
+        justify-content:center;
+         margin-left: 54%;
+    }
+    .craousal-para{
+        margin-top: 2%;
+        width: 100vw;
+        font-size: 18px;
+        font-weight: 300;
+        align-items: center;
+
+    }
+    
+    /* .ques{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 7px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 80vw;
+
+    }
+    .ques-ans{
+        width: 300px;
+ } */
+    
+ }
+ @media screen and(max-width:400px){
+    .tag-line{
+        width:200px;
+    }
+ }
